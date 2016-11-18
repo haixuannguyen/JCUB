@@ -13,6 +13,10 @@ div#logo {
     max-width: 200px;
     padding: 0 7px 7px 7px;
 }
+#top-widget {
+	float: right;
+}
+
 #top-menu-container {
     background: -moz-linear-gradient(left,#2e3192 0,#0066b3 100%);
     background: -webkit-gradient(linear,left top,right top,color-stop(0%,#2e3192),color-stop(100%,#0066b3));
@@ -37,7 +41,7 @@ div#logo {
     border-radius: 8px;
     min-height: 50px;
     margin-top: -20px;
-    max-width: 1170px;
+    max-width: 1140px;
     position: relative;
     z-index: 10;
     background: #1a1a1a;
@@ -86,15 +90,45 @@ div#logo {
 
 }
 
-.search-form .search-submit {
-    background-color: #333333;
+.sr-only {
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+padding: 0;
+overflow: hidden;
+clip: rect(0,0,0,0);
+border: 0;
+width: 355px;
+border-radius: 8px;
+}
+.btn-input-field button {
+background-color: transparent!important;
+color: #fff;
+height: 40px;
+border: none;
+position: absolute;
+right: 0;
+top: 0;
+width: 38px;
+margin-right: 0px;
+
+}
+input[type=search] {
+background-color: #2e3192;
+color: #fff;
+width: 360px;
+height: 40px;
+font-weight: 600;
+border-color: transparent;
+border-radius: 6px;
 }
 
 
-.cs-buttons, .nivo-controlNav {
 
-background-color:white;
 
+.caret {
+    color: #999999;
 }
 
 
@@ -104,18 +138,318 @@ background-color:white;
 
 /*----------Home Page----------*/
 
-.home_image {
-    margin-top: -35px;
-}
+/* For the slide show*/
 
-.home_Page_content{
-    padding: 1% 10%;
-    margin: 0 auto;
-    max-width: 1170px;
-    background-color: #fff;
-    min-width: 100%;
+#slideshow-container {
+    height: 700px;
+    position: relative;
+	margin-bottom: 25px;
 
 }
+
+#myCarousel {
+height: 100%;
+margin-top: -30px;
+}
+
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 700px;
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+	
+}
+
+.carousel-caption {
+    text-align: left;
+    bottom: 20%;
+    left: 15%;
+    width: 40%;
+}
+
+
+.carousel-caption h1 {
+    color: white;
+	font-weight: bold;
+	font-size:68px;
+}
+
+.carousel-caption p {
+    color: white;
+	font-size:20px;
+}
+.carousel-control .icon-next, .carousel-control .icon-prev {
+width: 30px;
+height: 30px;
+margin-top: -10px;
+font-size: 70px;
+}
+
+
+#myCarousel .carousel-indicators .active {
+    background-color: white;
+	
+  
+}
+#myCarousel .carousel-indicators{
+    bottom: 120px;
+	
+  
+}
+
+.cs-buttons, .nivo-controlNav {
+
+background-color:white;
+
+}
+
+#bottom-menu {
+    position: absolute;
+    /* margin-bottom: 25px; */
+    background: rgba(0, 0, 0,0.5);
+    min-height: 60px;
+    width: 100%;
+    bottom: 0;
+}
+
+#bottom-menu ul li a:hover,
+.nav .dropdown-menu li a:hover,
+.nav > li > a:hover,
+.nav > li > a:focus ,
+
+.nav li.active a {
+    background-color: transparent;
+    color: #2e3192;
+    font-weight: 600;
+	text-decoration: underline;
+
+}
+
+.navbar-nav li a {
+    color: #FFFFFF;
+
+}
+
+#main-container {
+	top: 25px;
+	bottom: 0;
+	width: 100%;
+	position: relative;
+}
+.main-content {
+	text-align: center;
+	margin-bottom: 25px;
+	
+}
+
+ /* ---------------------------- Search Degree and Career------------------------------- */
+
+.degree-search input[type=text] {
+    position: relative;
+    background: rgba(0, 0, 0,0.1);
+    width: 550px;
+    height: 60px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    /* background-color: white; */
+    /* background-position: 520px 20px; */
+    /* background-repeat: no-repeat; */
+    padding: 12px 20px 12px 40px;
+    /* -webkit-transition: width 0.4s ease-in-out; */
+    /* transition: width 0.4s ease-in-out; */
+}
+
+.search-form .search-submit:hover {
+   background-color: #2e3192 ;
+}
+.search-form .search-submit {
+    position: absolute;
+    height: 40px;
+    /* left: -4px; */
+    top: 39px;
+    right: 15px;
+    /* float: right; */
+    /* margin-bottom: 6px; */
+    background-color: #0b111c;
+    border: 1px solid white;
+    /* color: white; */
+    /* border-bottom-left-radius: 0; */
+    /* border-top-left-radius: 0; */
+}
+
+.btn-primary {
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 15px;
+	top: 0;
+}
+
+
+
+label {
+    display: inline-block;
+    width: 100%;
+    font-weight: bold;
+}
+
+ /* ---------------------------- Our Services------------------------------- */
+
+h1 {
+	margin-bottom: 20px;
+}
+#services {
+	position:relative;
+    font-size: 32px;
+    font-family: 'Signika', sans-serif;
+    padding-bottom: 25px;
+    margin-top: 25px;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+
+
+.services_child img {
+	width: 150px;
+	height: 150px;
+}
+
+.services_child mid {
+	width: 50%;
+}
+
+.services_child_title {
+	font-size: 22px;
+	margin-top: 15px;
+}
+
+
+#campus-life {
+	width: 100%;
+	height:100%;
+	position:relative;
+	margin-bottom:25px;
+	
+}
+
+#campus-life button {
+    position: absolute;
+    /* float: left; */
+    bottom: 5%;
+    right: 15%;
+    height: 60px;
+    color: #fff;
+    background-color: #1a1a1a;
+    /* border-color: #2e6da4; */
+}
+
+#campus-life button:hover {
+    color: #fff;
+    background-color: #2e3192;
+    border-color: #fffff;
+}
+
+.jcub-featured-stories {
+	background-color: #000;
+	color: #fff;
+	padding: 20px 0 50px 0;
+	position: relative;
+}
+
+.jcub-featured-stories .carousel-inner {
+	height: 350px;
+}
+
+.jcub-featured-stories .carousel-indicators {
+	margin: auto;
+}
+.img-responsive {
+display: block;
+max-width: 100%;
+height: 300px;
+}
+
+#fs-carousel h1 {
+	font-weight: bold;
+	font-size:48px;
+	text-align: center;
+	margin-top: 70px;
+}
+
+
+#fs-carousel .button {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 30px;
+    width: 300px;
+    margin-top: 50px;
+    border: 2px solid #798ed1;
+    border-radius: 8px;
+    background: #83a6de;
+    background: -webkit-gradient(linear, left top, left bottom, from(#83a6de), to(#1244e8));
+    background: -moz-linear-gradient(top, #83a6de, #1244e8);
+    background: linear-gradient(to bottom, #83a6de, #1244e8);
+    /* -webkit-box-shadow: #268eff 3px 0px 10px 0px; */
+    -moz-box-shadow: #268eff 3px 0px 10px 0px;
+    /* box-shadow: #268eff 3px 0px 10px 0px; */
+    text-shadow: #0a257f 3px 1px 1px;
+    font: normal normal bold 20px arial;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.button:hover,
+.button:focus {
+	  border: 2px solid #9db9ff;
+	  background: #9dc7ff;
+	  background: -webkit-gradient(linear, left top, left bottom, from(#9dc7ff), to(#1652ff));
+	  background: -moz-linear-gradient(top, #9dc7ff, #1652ff);
+	  background: linear-gradient(to bottom, #9dc7ff, #1652ff);
+	  color: #ffffff;
+	  text-decoration: none;
+}
+.button:active {
+	  background: #4f6485;
+	  background: -webkit-gradient(linear, left top, left bottom, from(#4f6485), to(#1244e8));
+	  background: -moz-linear-gradient(top, #4f6485, #1244e8);
+	  background: linear-gradient(to bottom, #4f6485, #1244e8);
+}
+.button:before{
+	  content:  "\0000a0";
+	  display: inline-block;
+	  height: 24px;
+	  width: 24px;
+	  line-height: 24px;
+	  margin: 0 4px -6px -4px;
+	  position: relative;
+	  top: 0px;
+	  left: 0px;
+	  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAACjElEQVRIie1UTWsTURQ9dzKpofQLobQFlxqENF1JG0GE6sKuRLDtTKaBkJUIRdwpba2g9ge48gMEUUyTbrUutFmk1X6Q7kxDgi1YUSmlpsGYiTXtuy7GCYnaSRu3PczAfe/dd8695z0ecIAKsFVK0DQNLpcL8Xi8KgHZalFRNWe7uyMs2+RtkBQIjQerU/k3uVceHhmdyed/8NbWFg8OXrlXDY+020JdXf2NQMB/yuE4hHw+j5yur1df7h9QvQMXpiKRHSEECyF4cvJlQVG149VwlZ1BX58fsn1H7e29+OhMd7cEAMyM6PTMNAgfFUWrJSIAQgCAYAKIAECABACABGFt7fPPaDRqjItVqyrqG5vGAn7/kMfTBYMIyGQyeD0VMZKYweYGM2ZjpnR+eWVl8V08fnYiNP6t1Jbzc3PzbNryP38stsiKqp0uWuTz+eBqd9/s6uo02vpdPTOXxZuZDB7cfwgQGa0TIEmS7nA4PhhDkgBgdXV1FkTzRYHCtjjS4XZ3mGQmSsdEhKbGRqhqPwRz0ZOlRKImGBy/FA4F31gd8tG2tjaZmf+VUybS2tpaNpfeTMsADu+2xxRw2O12ENFftpTG6XQat26PQZIIzEA2m/1SKBSGGXhhWZmiaifezs7yfhGdnmFF1TqtuM0OksvvlzMnPZ4mq+RkMoVsNlu83ImlxDqATxUFwqHg94aGhsc9PeeuNjc372pRMpnExsZX5HI5xBZjd3aEuBsOBTcs7TGherXaa9eHIqlUioUQltYIIXhkZPT5XnjL7qXi1Wpkm6w5nccGWlpanLJNlkGQyEw1Pui6rs8tLFx+9vTJq30JlKK/3ycRCQkSFZ8Dcwszi4lwUOylgwNUxC8cBKAS7hIWzwAAAABJRU5ErkJggg==") no-repeat left center transparent;
+	  background-size: 100% 100%;
+}
+
+
+
+
 
 .site-content container-full-width{
 width:auto;
@@ -170,12 +504,7 @@ width:auto;
     margin-bottom: -50px;
 }
 
-.button {
-    position: relative;
-    z-index: 3;
-    margin:-7vh 0% 0 78%;
-    max-width: 140px;
-}
+
 .entry-header
 h1.entry-title.post-title {
     font-size: 28px;
@@ -458,30 +787,9 @@ color: #fff !important;
     padding-bottom: 50px;
 }
 
-.services_child{	
-	Float:left;
-	position:relative;
-	display: table;
-	/*background-color:#303d74;
-	opacity:0.8;*/
-	padding:20px 20px 20px 20px;
-	width: 33%;
-	height: auto;
-        margin: 0 auto;
-}
 
-.services_child_image{
-	max-width:150px;
-	max-height:150px;
-	/*padding: 20px 20px 20px 20px;*/
-        margin-left: 15%;
-}
-.services_child_title {
-    font-size: 18px;
-    text-align: center;
-    max-width: 300px;
-    padding: 10px 20px 0px 20px;
-}
+
+
 
 .testimonial_image{
 max-height:80px;

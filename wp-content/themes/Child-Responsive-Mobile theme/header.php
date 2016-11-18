@@ -36,6 +36,25 @@ if ( ! defined( 'WPINC' ) ) {
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+	   <!-- Javascript -->
+    <script type="text/javascript" src="bootstrap-3.3.7/js/jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap-3.3.7/js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.3/js/lightslider.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.3/css/lightslider.min.css">
+	<script type="text/javascript">//<![CDATA[
+$(window).load(function(){
+$('#lightSlider').lightSlider({
+    gallery: true,
+    item: 1,
+    loop: true,
+    slideMargin: 10,
+    thumbItem: 4
+});
+});//]]> 
+
+</script>
 
 
 		<title><?php wp_title( '&#124;', true, 'right' ); ?></title>
@@ -80,11 +99,16 @@ if ( ! defined( 'WPINC' ) ) {
 
 					<div id="top-widget" class="top-widget" role="complementary" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
 
-						<div id="search-4" class="widget_search"><form role="search" method="get" class="search-form" action="http://localhost:8888/JCUB/">
-								<label>
-									<span class="screen-reader-text">Search for:</span>
-									<input type="search" class="search-field" placeholder="Search …" value="" name="s">
-								</label>
+						<div id="search" class="widget_search"><form role="search" method="get" class="search-form" action="http://testing.jcub.edu.au/">
+								<fieldset>
+                            <div class="btn-input-field">
+                                <label for="search-term" class="sr-only">Search Term</label>
+                                <input id="search-term" type="search" name="s" value="" class="form-control" placeholder="Search ...">
+                                <button class="btn" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+                            </div>
+                           
+                        </fieldset>
+                                 
 
 							</form></div>
 
