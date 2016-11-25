@@ -41,18 +41,7 @@ if ( ! defined( 'WPINC' ) ) {
     <script type="text/javascript" src="bootstrap-3.3.7/js/jquery.min.js"></script>
     <script type="text/javascript" src="bootstrap-3.3.7/js/bootstrap.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.3/js/lightslider.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.3/css/lightslider.min.css">
-	<script type="text/javascript">//<![CDATA[
-$(window).load(function(){
-$('#lightSlider').lightSlider({
-    gallery: true,
-    item: 1,
-    loop: true,
-    slideMargin: 10,
-    thumbItem: 4
-});
-});//]]> 
+	<script type="text/javascript" src="https://go.pardot.com/dcjs/122402/345/dc.js"></script>
 
 </script>
 

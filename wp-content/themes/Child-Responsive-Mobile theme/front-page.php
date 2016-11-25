@@ -18,7 +18,7 @@ if ( get_option( 'show_on_front' ) == 'posts' ) {
             <div class="carousel-inner">
                 <div class="item active">
                     <!-- Set the first background image using inline CSS below. -->
-                    <div class="fill" style="background-image: url('http://localhost/jcub/wp-content/uploads/2016/11/imageedit_1_3366527132.jpg');">
+                    <div class="fill" style="background-image: url('http://localhost/jcub/wp-content/uploads/2016/11/imageedit_3_5581986188.jpg');">
                     
                       <!----------------------------------------- Change Image for Maintainance ----------------------------------------------> 
                     </div>
@@ -46,7 +46,7 @@ if ( get_option( 'show_on_front' ) == 'posts' ) {
 						linear-gradient(
 						  rgba(0, 0, 0, 0),
 						  rgba(0, 0, 0, 0)
-						), url('http://localhost/jcub/wp-content/uploads/2016/11/imageedit_3_5581986188.jpg');">
+						), url('http://localhost/jcub/wp-content/uploads/2016/11/imageedit_1_3366527132.jpg');">
                         
                         <!----------------------------------------- Change Image for Maintainance ----------------------------------------------> 
                     </div>
@@ -77,10 +77,10 @@ if ( get_option( 'show_on_front' ) == 'posts' ) {
                 <div class="row">
                    
                         <ul class="nav navbar-nav col-md-12 ">
-							<li class="col-md-3 "><a href="#" style="text-align: center;"><img src="http://localhost/jcub/wp-content/uploads/2016/11/circle-icon-1.png" style="width: 50px; text-align:  center;" >   <p>Library </p></a></li>
-							<li class="col-md-3"><a href="#" style="text-align: center;"><img src="http://localhost/jcub/wp-content/uploads/2016/11/circle-icon-1.png" style="width: 50px; text-align: center;" > <p>Trimester System</p></a></li>
-							<li class="col-md-3"><a href="#" style="text-align: center;"><img src="http://localhost/jcub/wp-content/uploads/2016/11/circle-icon-1.png" style="width: 50px; text-align: center;" > <p>Joblink </p></a></li>
-							<li class="col-md-3"><a href="#" style="text-align: center; margin-right: -10px;"><img src="http://localhost/jcub/wp-content/uploads/2016/11/circle-icon-1.png" style="width: 50px; text-align: center;" >  <p style="margin-right:6px;">FAQs </p></a></li>  
+							<li class="col-md-3 "><a href="#" style="text-align: center;"><img src="http://localhost/jcub/wp-content/uploads/2016/11/circle-icon-1.png" style="width: 50px; text-align:  center;" >   <p style="margin-top: 5px;">Library </p></a></li>
+							<li class="col-md-3"><a href="#" style="text-align: center;"><img src="http://localhost/jcub/wp-content/uploads/2016/11/circle-icon-1.png" style="width: 50px; text-align: center;" > <p style="margin-top: 5px;">Trimester System</p></a></li>
+							<li class="col-md-3"><a href="#" style="text-align: center;"><img src="http://localhost/jcub/wp-content/uploads/2016/11/circle-icon-1.png" style="width: 50px; text-align: center;" > <p style="margin-top: 5px;">Joblink </p></a></li>
+							<li class="col-md-3"><a href="#" style="text-align: center; margin-right: -10px;"><img src="http://localhost/jcub/wp-content/uploads/2016/11/circle-icon-1.png" style="width: 50px; text-align: center;margin-bottom: 5px;" >  <p style="margin-right:6px;margin-top: 5px;">FAQs </p></a></li>  
                          </ul>                         
                    
                 </div>
@@ -171,56 +171,68 @@ if ( get_option( 'show_on_front' ) == 'posts' ) {
    
        
 	<div id="campus-life">
-					<div class="campus" style="height:500px; background-image: 
+		<div class="campus " style="height:500px; background-image: 
 						linear-gradient(
 						  rgba(0, 0, 0, 0.3),
 						  rgba(0, 0, 0, 0.3)
 						), url('http://localhost/jcub/wp-content/uploads/2016/11/campus-life-1.jpg');">
-						
-					</div>
-                    <div class="carousel-caption">
+				
+		 <div class="container">
+        <div class="content-row">
+                    <div class="title col-md-12">
 					
                        <h1>Campus<br/>Life</h1>
                     </div>
-				
-					 <button type="button" class="btn-lg">Find out more</button>
-					
+					<div class="btn-lg col-md-12">
+					 <button type="button">Find out more</button>
+					</div>
+      	</div>
+        </div>
+       </div>
 				
 	</div>
+    <div id="widgets">
+    	<div class="container">
+            <div class="row">
+                <div class="news col-md-12">
+                    <?php echo do_shortcode( '[frontpage_news widget="63" name="News"]' ); ?>
+                </div>
+              
+            </div>
+        </div> 
+    </div>
+    
     
     <div class="jcub-featured-stories">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h2></h2>
-                </div>
-            </div>
+            
             <div id="fs-carousel" class="carousel slide" data-interval="8000">
-                <ol class="carousel-indicators">
-                        <li data-target="#fs-carousel" data-slide-to="0" class=""></li>
-                        <li data-target="#fs-carousel" data-slide-to="1" class="active"></li>
+                <ol class="carousel-indicators  hidden-xs">
+                        <li data-target="#fs-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#fs-carousel" data-slide-to="1" class=""></li>
                         <li data-target="#fs-carousel" data-slide-to="2" class=""></li>
+                        <li data-target="#fs-carousel" data-slide-to="3" class=""></li>
                    
                 </ol>
                 <div class="carousel-inner" role="listbox">
                         <div class="item active">
                             <div class="row">
-                                <div class="col-sm-6">
+                               	<div class="image col-md-6  hidden-xs">
                                     <img class="img-responsive" src="http://localhost/jcub/wp-content/uploads/2016/11/employer-preferred-graduates-web-banner-1.jpg" alt=" ">
                                 </div>
-                                <div class="col-sm-2">
-                                    <h1><strong>TOP 2%  </strong></h1>
-                                 </div>
-                                 <div class="col-sm-4">
-                                    <h3> Universities in the world. </h3>
-                                    <p>JCU ranked among top 2% of university in the world by the Academic Ranking of World University</p>
-                                   <a class="button" href="">APPLY NOW!</a></p>
+                            
+                                 <div class="col-md-6">
+                                  <h1><strong>TOP 2%  </strong></h1>
+                                    <h2> Universities in the world. </h2>
+                                    <p>JCU ranked among top 2% of university in the world by the Academic Ranking of World University
+                                  
                                 </div>
+                                 
                             </div>
                         </div>
                         <div class="item ">
                             <div class="row">
-                                <div class="col-sm-6">
+                                <div class="col-sm-6  hidden-xs">
                                     <img class="img-responsive" src="http://localhost/jcub/wp-content/uploads/2016/11/top-2-percent-web-banner-1.jpg" alt="Respect. Now. Always.">
                                 </div>
                                 <div class="col-sm-2">
@@ -229,13 +241,13 @@ if ( get_option( 'show_on_front' ) == 'posts' ) {
                                  <div class="col-sm-4">
                                     <h3> Universities in the world. </h3>
                                     <p>JCU ranked among top 2% of university in the world by the Academic Ranking of World University</p>
-                                   <a class="button" href="">APPLY NOW!</a></p>
+                                   <p><a class="button" href="">APPLY NOW!</a></p>
                                 </div>
                             </div>
                         </div>
                         <div class="item">
                             <div class="row">
-                                <div class="col-sm-6">
+                                <div class="col-sm-6 hidden-xs">
                                     <img class="img-responsive" src="http://localhost/jcub/wp-content/uploads/2016/11/benchaphon-phupanpha-web-banner-1.jpg" alt="">
                                 </div>
                                 <div class="col-sm-2">
@@ -251,7 +263,7 @@ if ( get_option( 'show_on_front' ) == 'posts' ) {
                         
                          <div class="item">
                             <div class="row">
-                                <div class="col-sm-6">
+                                <div class="col-sm-6  hidden-xs">
                                     <img class="img-responsive" src="http://localhost/jcub/wp-content/uploads/2016/11/welcometotrimester3-2016-web-banner-1.jpg" alt="">
                                 </div>
                                 <div class="col-sm-2">
@@ -266,7 +278,7 @@ if ( get_option( 'show_on_front' ) == 'posts' ) {
                         </div>
                 </div>
 
-            </div>
+            
         </div>
 
         <a class="left carousel-control" href="#fs-carousel" role="button" data-slide="prev">
@@ -278,7 +290,30 @@ if ( get_option( 'show_on_front' ) == 'posts' ) {
             <span class="sr-only">Next</span>
         </a>
     </div>
+   </div>
+   
+   <div id="contact">
+                    
+	<div class="container">
+    <div class="row">
+
+		<div class="module-title col-md-12">
+		
+		<h2 class="title"><span style="text-transform:uppercase;">Let's talk about you</span></h2>
+		
+
+        <p class="fp-contact-desc">
+        We are here to help. <br>Tell us your plans for studying in JCU Brisbane.
+        </p>
+        
+        <p class="largemargintop largepaddingtop">
+            <a href="/contact-us" class="readon2 rt-uppercase">Contact us</a>
+        </p>
+        </div>
 	
+	</div>
+    </div>
+    </div>
 		
      
      
