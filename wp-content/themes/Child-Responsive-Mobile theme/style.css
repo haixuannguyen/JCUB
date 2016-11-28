@@ -481,16 +481,26 @@ span.img_cropper {
     margin-right: 20px;
     /* padding: 0 15px; */
 }
-.wpcufpn_container .read-more {
-    display: block;
+.wpcufpn_container span.read-more  {
+    display: none;
     color: #428bca;
     font-size: 13px;
     text-align: right;
     margin-right: 35px;
-    margin-top: 110px;
+    margin-top: 40px;
+	font-weight: bold;
+}
+span .read-more a {
+	display: none;
+	 color: #428bca;
+    font-size: 13px;
+    text-align: right;
+    margin-right: 35px;
+    margin-top: 40px;
+	font-weight: bold;
 }
 
-.wpcufpn_container .read-more {
+.wpcufpn_container .read-more a{
     display: block;
     color: #428bca;
     font-size: 13px;
@@ -582,7 +592,7 @@ height: 300px;
 
 #contact {
 	width: 100%;
-	height: 300px;
+	height: 350px;
 	position: relative;
 	/*background-image: url(http://localhost/jcub/wp-content/uploads/2016/11/support.png);*/
 	background-color: #1a1a1a;
