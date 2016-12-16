@@ -195,7 +195,7 @@ if ( get_option( 'show_on_front' ) == 'posts' ) {
     	<div class="container">
             <div class="row">
                 <div class="news col-md-12">
-                    <?php echo do_shortcode( '[frontpage_news widget="63" name="News"]' ); ?>
+                    <?php echo do_shortcode( '[frontpage_news widget="61" name="News"]' ); ?>
                 </div>
               
             </div>
@@ -217,62 +217,56 @@ if ( get_option( 'show_on_front' ) == 'posts' ) {
                 <div class="carousel-inner" role="listbox">
                         <div class="item active">
                             <div class="row">
-                               	<div class="image col-md-6  hidden-xs">
+                               	<div class="image col-md-8  hidden-xs">
                                     <img class="img-responsive" src="http://localhost/jcub/wp-content/uploads/2016/11/employer-preferred-graduates-web-banner-1.jpg" alt=" ">
                                 </div>
                             
-                                 <div class="col-md-6">
+                                 <div class="col-md-4">
                                   <h1><strong>TOP 2%  </strong></h1>
                                     <h2> Universities in the world. </h2>
-                                    <p>JCU ranked among top 2% of university in the world by the Academic Ranking of World University
-                                  
+                                    <p>JCU ranked among top 2% of university in the world by the Academic Ranking of World University</p>
+                                     <a class="button" href="">APPLY NOW!</a>
                                 </div>
                                  
                             </div>
                         </div>
                         <div class="item ">
                             <div class="row">
-                                <div class="col-sm-6  hidden-xs">
+                                <div class="col-sm-8  hidden-xs">
                                     <img class="img-responsive" src="http://localhost/jcub/wp-content/uploads/2016/11/top-2-percent-web-banner-1.jpg" alt="Respect. Now. Always.">
                                 </div>
-                                <div class="col-sm-2">
-                                    <h1><strong>TOP 2%  </strong></h1>
-                                 </div>
-                                 <div class="col-sm-4">
-                                    <h3> Universities in the world. </h3>
+                               <div class="col-md-4">
+                                  <h1><strong>TOP 2%  </strong></h1>
+                                    <h2> Universities in the world. </h2>
                                     <p>JCU ranked among top 2% of university in the world by the Academic Ranking of World University</p>
-                                   <p><a class="button" href="">APPLY NOW!</a></p>
+                                     <a class="button" href="">APPLY NOW!</a>
                                 </div>
                             </div>
                         </div>
                         <div class="item">
                             <div class="row">
-                                <div class="col-sm-6 hidden-xs">
+                                <div class="col-sm-8 hidden-xs">
                                     <img class="img-responsive" src="http://localhost/jcub/wp-content/uploads/2016/11/benchaphon-phupanpha-web-banner-1.jpg" alt="">
                                 </div>
-                                <div class="col-sm-2">
-                                    <h1><strong>TOP 2%  </strong></h1>
-                                 </div>
-                                 <div class="col-sm-4">
-                                    <h3> Universities in the world. </h3>
+                                <div class="col-md-4">
+                                  <h1><strong>TOP 2%  </strong></h1>
+                                    <h2> Universities in the world. </h2>
                                     <p>JCU ranked among top 2% of university in the world by the Academic Ranking of World University</p>
-                                   <a class="button" href="">APPLY NOW!</a></p>
+                                     <a class="button" href="">APPLY NOW!</a>
                                 </div>
                             </div>
                         </div>
                         
                          <div class="item">
                             <div class="row">
-                                <div class="col-sm-6  hidden-xs">
+                                <div class="col-sm-8  hidden-xs">
                                     <img class="img-responsive" src="http://localhost/jcub/wp-content/uploads/2016/11/welcometotrimester3-2016-web-banner-1.jpg" alt="">
                                 </div>
-                                <div class="col-sm-2">
-                                    <h1><strong>TOP 2%  </strong></h1>
-                                 </div>
+                                
                                  <div class="col-sm-4">
                                     <h3> Universities in the world. </h3>
                                     <p>JCU ranked among top 2% of university in the world by the Academic Ranking of World University</p>
-                                   <a class="button" href="">APPLY NOW!</a></p>
+                                   <a class="button" href="">APPLY NOW!</a>
                                 </div>
                             </div>
                         </div>

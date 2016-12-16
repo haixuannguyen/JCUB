@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Content/Sidebar
+ * Template Name: Full Width Pages (no sidebar)
  *
  * Template for pages
  *
@@ -14,12 +14,14 @@
  */
 
 // If this file is called directly, abort.
-
+if ( ! defined( 'WPINC' ) ) {
+	die;
+}
 
 get_header(); ?>
 <div class="container">
 	<div id="content" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main container " role="main">
 
 			<?php if ( have_posts() ) : ?>
 
@@ -37,12 +39,9 @@ get_header(); ?>
 				<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 			<?php endif; ?>
-		
-        
-        	
+			 
 		</main><!-- #main -->
+	</div><!-- #content-full -->
+</div>
 
-		
-	</div><!-- #content -->
- </div>
 <?php get_footer(); ?>

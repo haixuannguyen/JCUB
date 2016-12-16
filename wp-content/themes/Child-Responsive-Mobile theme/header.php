@@ -140,6 +140,16 @@ if ( ! defined( 'WPINC' ) ) {
 			</nav><!-- #site-navigation -->
 		</div><!-- #sub-menu -->
 	</div><!-- #sub-menu-container -->
+    <div class = "feature-images">
+    <?php
+	// Added filter to get featured_image option working.
+	$featured_image = apply_filters( 'responsive_mobile_featured_image', '1' );
+	if ( has_post_thumbnail() && $featured_image ) {
+		the_post_thumbnail();
+	} ?>
+    </div>
+    
+    
 <?php responsive_mobile_wrapper(); // before wrapper container hook ?>
 	<div id="wrapper" class="site-content container-full-width">
 <?php responsive_mobile_wrapper_top(); // before wrapper content hook ?>
