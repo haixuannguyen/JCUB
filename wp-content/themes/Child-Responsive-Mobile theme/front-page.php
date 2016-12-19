@@ -201,7 +201,7 @@ if ( get_option( 'show_on_front' ) == 'posts' ) {
             </div>
         </div> 
     </div>
-    
+      <!----------------------------------------- section Feedback---------------------------------------------->
     
     <div class="jcub-featured-stories">
         <div class="container">

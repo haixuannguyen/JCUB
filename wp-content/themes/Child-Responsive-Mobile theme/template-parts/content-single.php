@@ -19,7 +19,7 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 ?>
-<div class="container">
+
 <?php responsive_mobile_entry_before(); ?>
 <?php echo Su_Shortcodes::button(
 	// First argument is array with shortcode attributes
@@ -62,4 +62,3 @@ if ( ! defined( 'WPINC' ) ) {
 	<?php responsive_mobile_entry_bottom(); ?>
 </article><!-- #post-## -->
 <?php responsive_mobile_entry_after(); ?>
-</div>

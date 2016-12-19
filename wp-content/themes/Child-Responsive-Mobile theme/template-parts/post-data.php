@@ -19,7 +19,7 @@ if ( ! defined( 'WPINC' ) ) {
 }
 ?>
 
-<footer class="post-data">
+<footer class="post-data container">
 	<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
 		<?php
 			/* translators: used between list items, there is a space after the comma */
@@ -52,4 +52,7 @@ if ( ! defined( 'WPINC' ) ) {
 	<div class="entry-meta">
 		<?php edit_post_link( __( 'Edit', 'responsive-mobile' ), '<span class="post-edit">', '</span>' ); ?>
 	</div><!-- .entry-meta -->
+  
 </footer><!-- .post-data -->
+
+

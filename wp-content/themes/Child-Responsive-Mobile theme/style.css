@@ -709,7 +709,7 @@ width:auto;
 }
 .breadcrumb-list {
     font-size: 14px;
-  	padding: 15px;
+  	padding: 0px;
     font-weight: bold;
     position: absolute;
 }
@@ -890,13 +890,16 @@ width:auto;
     /* padding: 0 250px; */
     margin-top: 70px;
 }
+.single #content {
+	padding-left:-15px;
+}
 
 main#main {
     position: relative;
     /* min-height: 1px; */
     /* padding-left: 15px; */
     /* padding-right: 15px; */
-     padding: 0 0 0 250px;
+     padding: 0 0 0 0px;
 }
 .full-width-page main#main, .page-template-page-templateslanding-page-php main#main, .page-template-page-templatessitemap-php main#main{
 padding: 0px;
