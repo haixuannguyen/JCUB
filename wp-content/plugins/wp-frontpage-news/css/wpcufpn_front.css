@@ -14,12 +14,12 @@
 	/*background: #fff;*/
 }
 .wpcufpn_container ul {
-	display: block;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	position: absolute;
-	overflow: hidden;
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: auto;
 }
 .wpcufpn_container li {
 	display: inline-block;
@@ -40,13 +40,7 @@
 	margin: 0;
 }
 
-/*
-.wpcufpn_container table {
-	width: 100%;
-	/*overflow: hidden;*/
-	/*table-layout: fixed;*/
-}
-*/
+
 
 .wpcufpn_container a,
 .wpcufpn_container a:focus,
@@ -99,19 +93,34 @@
 	overflow: hidden;
 	text-overflow: ellipsis;
 	max-width: 100%;
-	min-height: 7em;
+	min-height: 8em;
 }
 
 
+/*media all*/
 .wpcufpn_container .read-more a {
     display: block;
     color: #428bca;
+    padding: 5px;
     font-size: 13px;
-    text-align: right;
+    float: right;
     font-weight: bold;
-    margin-right: 35px;
-    margin-top: 40px;
+    margin-top: -15px;
+    background: #333;
 }
+.wpcufpn_container .text, .wpcufpn_container .date {
+    overflow: hidden;
+    display: block;
+    text-align: left;
+    line-height: 1.1;
+    font-weight: normal;
+    text-overflow: ellipsis;
+    margin-top: 20px;
+    /* margin-right: 20px; */
+    padding: 0;
+}
+
+
 span.img_cropper {
 	overflow: hidden;
 	display: block;
