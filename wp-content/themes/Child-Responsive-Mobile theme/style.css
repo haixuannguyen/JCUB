@@ -447,7 +447,7 @@ h1 {
 #campus-life button {
     position: absolute;
     /* float: left; */
-    bottom: -250px;
+    bottom: -220px;
     right: 0;
     border-radius: 6px;
     padding: 20px;
@@ -465,11 +465,16 @@ h1 {
 }
 
 
+ /* ---------------------------- NEWS------------------------------- */
+
 .widget-wrapper{
 	width: 550px;
 	padding: 0;
 }
 	
+.news {
+	padding: 15px;
+}
 
 .thumbnail {
 	width: 250px;
@@ -828,6 +833,7 @@ width:auto;
 
 
 
+
 	
 	
 	
@@ -858,7 +864,10 @@ width:auto;
 .single #content {
 	padding-left:-15px;
 }
+.cat-links {
+   	display: none;
 
+}
 main#main {
     position: relative;
     /* min-height: 1px; */
@@ -1452,19 +1461,16 @@ float:left;
 	max-width: 100%;
 }
 
-/*media all*/
+
+
 .wpcufpn_container .read-more a {
     display: block;
     color: #428bca;
-    padding: 5px;
     font-size: 13px;
-    float: right;
+    text-align: center;
     font-weight: bold;
-    margin-top: -10px;
-    background: #333;
-}
-
-argin-top: 10px;
+    margin-right: 0;
+    margin-top: 10px;
 }
 .wpcufpn_container .text, .wpcufpn_container .date {
     overflow: hidden;
