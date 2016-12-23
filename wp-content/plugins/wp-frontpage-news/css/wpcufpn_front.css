@@ -19,7 +19,7 @@
     margin: 0;
     padding: 0;
     position: relative;
-    overflow: auto;
+    overflow: hidden;
 }
 .wpcufpn_container li {
 	display: inline-block;
@@ -100,7 +100,7 @@
 /*media all*/
 .wpcufpn_container .read-more a {
     display: block;
-    color: #428bca;
+    color: white;
     padding: 5px;
     font-size: 13px;
     float: right;
@@ -151,6 +151,7 @@ span.line_limit {
 .wpcu-front-box.right {
 	margin: 0;
 	padding: 0;
+	
 }
 
 .wpcu-front-box.left {
