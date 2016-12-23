@@ -508,45 +508,10 @@ span.img_cropper {
     margin-top: -10px;
 }
 
-.wpcufpn_container .text, .wpcufpn_container .date {
-    overflow: hidden;
-    display: block;
-    text-align: left;
-    line-height: 1.1;
-    font-weight: normal;
-    text-overflow: ellipsis;
-    margin-top: 20px;
-    margin-right: 20px;
-    /* padding: 0 15px; */
-}
-.wpcufpn_container span.read-more  {
-    display: none;
-    color: #428bca;
-    font-size: 13px;
-    text-align: right;
-    margin-right: 35px;
-    margin-top: 40px;
-	font-weight: bold;
-}
-span .read-more a {
-	display: none;
-	 color: #428bca;
-    font-size: 13px;
-    text-align: right;
-    margin-right: 35px;
-    margin-top: 5px;
-	font-weight: bold;
-}
 
-.wpcufpn_container .read-more a {
-    display: block;
-    color: #428bca;
-    font-size: 13px;
-    text-align: right;
-    font-weight: bold;
-    margin-right: 35px;
-    margin-top: 10px;
-}
+
+
+
 
 
 
@@ -632,7 +597,7 @@ height: 300px;
 
 #contact {
 	width: 100%;
-	height: 350px;
+	height: 400px;
 	position: relative;
 	/*background-image: url(http://localhost/jcub/wp-content/uploads/2016/11/support.png);*/
 	background-color: #1a1a1a;
@@ -1421,3 +1386,94 @@ float:left;
 
 
 /*--------------*/
+#widgets, main#main.sitemap .sitemap-widgets {
+    margin-bottom: 20px;
+    position: relative;
+    /* min-height: 500px; */
+    /* height: 1000px; */
+}
+
+
+
+.wpcufpn_container ul {
+    display: block;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+#widgets ul li, main#main.sitemap .sitemap-widgets ul li {
+    list-style: none;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    position: relative;
+    display: block;
+    /* overflow: auto; */
+}
+
+#widgets ul li, main#main.sitemap .sitemap-widgets ul li {
+    list-style: none;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    position: relative;
+    display: block;
+    /* overflow: auto; */
+}
+.wpcufpn_container li {
+    display: block;
+    margin-top: 20px;
+    position: relative;
+    /* float: left; */
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+    margin: auto;
+    text-align: left;
+}
+
+.wpcu-front-box.left {
+    display: inline;
+    /* width: 25%; */
+    position: relative;
+    float: left;
+}
+
+.wpcu-front-box.right {
+  
+    
+    display: block;
+    position: initial;
+    overflow: inherit;
+    margin-left: 10px;
+	max-width: 100%;
+}
+
+/*media all*/
+.wpcufpn_container .read-more a {
+    display: block;
+    color: #428bca;
+    padding: 5px;
+    font-size: 13px;
+    float: right;
+    font-weight: bold;
+    margin-top: -10px;
+    background: #333;
+}
+
+argin-top: 10px;
+}
+.wpcufpn_container .text, .wpcufpn_container .date {
+    overflow: hidden;
+    display: block;
+    text-align: left;
+    line-height: 1.1;
+    font-weight: normal;
+    text-overflow: ellipsis;
+    margin-top: 20px;
+    
+    /* padding: 0 15px; */
+}
