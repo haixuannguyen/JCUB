@@ -19,29 +19,69 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 get_header(); ?>
-<div class="container">
-	<div id="content" class="content-area">
-		<main id="main" class="site-main container " role="main">
+<div class="container"
+   
+       <div class = "col-md-3">
+    <?php echo Su_Shortcodes::button(
+        // First argument is array with shortcode attributes
+        array(
+            'style' => 'flat',
+            'background' => '#2354a3',
+            'font-size' =>'16px',
+            'line-height' =>'56px',
+            'border-color' =>'#6cacf4',
+            'border-radius' =>'5px',
+            '-moz-border-radius' =>'5px',
+            '-webkit-border-radius' =>'5px',
+            
+             'url'=>"http://localhost/jcub/how-to-apply/" 
+            
+        ),
+        
+        /*Second argument is a shortcode content (between opening and closing tags)*/
+        'APPLY NOW'
+    );  ?>
+    
+    <div class = "col-md-12">
+    <header class="entry-header">
+        <?php if( is_single() ) {
+            the_title( '<h1 class="entry-title post-title">', '</h1>' );
+        } else {
+            the_title( sprintf( '<h1 class="entry-title post-title">', esc_url( get_permalink() ) ), '</a></h1>' );
+        } ?>
+    
+       
 
-			<?php if ( have_posts() ) : ?>
-
-				<?php get_template_part( 'template-parts/loop-header' ); ?>
-
-				<?php /* Start the Loop */ ?>
-				<?php while ( have_posts() ) : the_post(); ?>
-
-					<?php get_template_part( 'template-parts/content', 'page' ); ?>
-
-				<?php endwhile; ?>
-
-			<?php else : ?>
-
-				<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-			<?php endif; ?>
-			 
-		</main><!-- #main -->
-	</div><!-- #content-full -->
+    </header><!-- .entry-header -->
+    
+    </div>
 </div>
 
+<div class="content container">
+
+	<div id="content" class="content-area">
+    
+			<main id="main" class="site-main" role="main">
+
+				<?php get_template_part( 'template-parts/loop-header' ); ?>
+                
+
+				<?php while ( have_posts() ) : the_post(); ?>
+
+					<?php get_template_part( 'template-parts/content', 'single' ); ?>
+
+					<?php responsive_mobile_post_nav(); ?>
+
+					<?php responsive_mobile_comments_before(); ?>
+				
+					<?php responsive_mobile_comments_after(); ?>
+
+				<?php endwhile; // end of the loop. ?>
+                
+
+			</main><!-- #main -->
+
+			<?php get_sidebar(); ?>
+	</div><!-- #content -->
+</div>
 <?php get_footer(); ?>
