@@ -105,7 +105,7 @@ if ( get_option( 'show_on_front' ) == 'posts' ) {
 				<div class="degree-search col-md-6">
 					<div class="career search" role="complementary" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
 							<div id="search" class="career-search">
-								<form role="search" method="get" class="search-form" action="http://testing.jcub.edu.au/">
+								<form role="search" method="get" class="search-form" action="">
 									<label>
 										<span class="screen-reader-text"></span>
 										<input type="text" class="search-field" placeholder="Degree Search" value="" name="s">
@@ -121,7 +121,7 @@ if ( get_option( 'show_on_front' ) == 'posts' ) {
 				<div class="degree-search col-md-6">
 					<div class="career search" role="complementary" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
 							<div id="search" class="career-search">
-								<form role="search" method="get" class="search-form" action="http://testing.jcub.edu.au/">
+								<form role="search" method="get" class="search-form" action="">
 									<label>
 										<span class="screen-reader-text"></span>
 										<input type="text" class="search-field" placeholder="Choose your career" value="" name="s">	
@@ -171,7 +171,7 @@ if ( get_option( 'show_on_front' ) == 'posts' ) {
    
        
 	<div id="campus-life">
-		<div class="campus " style="height:500px; background-image: 
+		<div class="campus " style=" margin-bottom:25px;height:500px; background-image: 
 						linear-gradient(
 						  rgba(0, 0, 0, 0.3),
 						  rgba(0, 0, 0, 0.3)
@@ -194,8 +194,9 @@ if ( get_option( 'show_on_front' ) == 'posts' ) {
     <div id="widgets">
     	<div class="container">
             <div class="row">
-                <div class="news col-md-12">
-                    <?php echo do_shortcode( '[frontpage_news widget="61" name="News"]' ); ?>
+                <div class="news">
+                <h1 style="text-align:center; "><b><a style="color:#333;" href="http://localhost/jcub/news-events/">News & Events</a></b></h1>
+                    <?php echo do_shortcode("[pt_view id=674ba515ob]"); ?>
                 </div>
               
             </div>
@@ -301,7 +302,7 @@ if ( get_option( 'show_on_front' ) == 'posts' ) {
         </p>
         
         <p class="largemargintop largepaddingtop">
-            <a href="/contact-us" class="readon2 rt-uppercase">Contact us</a>
+            <a href="http://localhost/jcub/contact-us/" class="readon2 rt-uppercase">Contact us</a>
         </p>
         </div>
 	

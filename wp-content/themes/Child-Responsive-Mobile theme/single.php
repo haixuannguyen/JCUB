@@ -19,11 +19,51 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 get_header(); ?>
+<div class="container"
+    <div class = "col-md-4">
+    <?php echo Su_Shortcodes::button(
+        // First argument is array with shortcode attributes
+        array(
+            'style' => 'flat',
+            'background' => '#2354a3',
+            'font-size' =>'16px',
+            'line-height' =>'56px',
+            'border-color' =>'#6cacf4',
+            'border-radius' =>'5px',
+            '-moz-border-radius' =>'5px',
+            '-webkit-border-radius' =>'5px',
+            
+             'url'=>"http://localhost/jcub/how-to-apply/" 
+            
+        ),
+        
+        /*Second argument is a shortcode content (between opening and closing tags)*/
+        'APPLY NOW'
+    );  ?>
+  
+    <div class = "col-md-8">
+    <header class="entry-header">
+        <?php if( is_single() ) {
+            the_title( '<h1 class="entry-title post-title">', '</h1>' );
+        } else {
+            the_title( sprintf( '<h1 class="entry-title post-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' );
+        } ?>
+    
+       
+    
+    </header><!-- .entry-header -->
+    
+    </div>
+</div>
+
 <div class="content container">
+
 	<div id="content" class="content-area">
+    
 			<main id="main" class="site-main" role="main">
 
 				<?php get_template_part( 'template-parts/loop-header' ); ?>
+                
 
 				<?php while ( have_posts() ) : the_post(); ?>
 
@@ -32,15 +72,11 @@ get_header(); ?>
 					<?php responsive_mobile_post_nav(); ?>
 
 					<?php responsive_mobile_comments_before(); ?>
-					<?php
-						// If comments are open or we have at least one comment, load up the comment template
-						if ( comments_open() || '0' != get_comments_number() ) :
-							comments_template( '', true );
-						endif;
-					?>
+				
 					<?php responsive_mobile_comments_after(); ?>
 
 				<?php endwhile; // end of the loop. ?>
+                
 
 			</main><!-- #main -->
 
