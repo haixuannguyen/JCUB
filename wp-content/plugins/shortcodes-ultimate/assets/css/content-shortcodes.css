@@ -219,48 +219,24 @@
 ---------------------------------------------------------------*/
 
 .su-button {
-    display: inline-block;
-    border-radius: 5px;
-    text-align: center;
     vertical-align: middle;
-    /* margin: 150px; */
     padding: 0 20px;
-    margin-top: -120px;
-    /* border: 2px solid #798ed1; */
-    border-radius: 8px;
+    margin-top: -30px;
     background: #2354a3;
-    text-shadow: #0a257f 3px 1px 1px;
     font: normal normal bold 20px arial;
-    color: #ffffff;
-    text-decoration: none;
+    bottom: 12vw;
     position: relative;
     z-index: 3;
     float: right;
-    /* margin-right: -130px; */
-    /* right: 110px; */
-    width: 120px;
-    /* padding: 12px; */
-    /* margin-bottom: 70px; */
     font-size: 16px;
-    line-height: 56px;
-    border-color: #6cacf4;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
+    line-height: 46px;
     text-shadow: none;
-    -moz-text-shadow: none;
-    -webkit-text-shadow: none;
     display: inline-block !important;
     text-align: center;
     text-decoration: none !important;
-    box-sizing: content-box !important;
-    -moz-box-sizing: content-box !important;
-    -webkit-box-sizing: content-box !important;
-    transition: all .2s;
-    -o-transition: all .2s;
-    -ie-transition: all .2s;
-    -moz-transition: all .2s;
     -webkit-transition: all .2s;
+}
+
 .su-button img {
 	border: none !important;
 	vertical-align: middle !important;
