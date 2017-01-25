@@ -20,33 +20,32 @@ if ( ! defined( 'WPINC' ) ) {
 }
 ?>
 
+
+
 <?php responsive_mobile_entry_before(); ?>
-<?php echo Su_Shortcodes::button(
-	// First argument is array with shortcode attributes
-	array(
-		'style' => 'flat',
-		'background' => '#0099ff',
-		'font-size' =>'16px',
-		'line-height' =>'56px',
-		'border-color' =>'#6cacf4',
-		'border-radius' =>'5px',
-		'-moz-border-radius' =>'5px',
-		'-webkit-border-radius' =>'5px',
-		
-		'url'=>"http://www.jcub.edu.au/courses/how-to-apply/international-students.aspx" 
-		
-	),
-	/*Second argument is a shortcode content (between opening and closing tags)*/
-	'APPLY NOW'
-);  ?>
 
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php responsive_mobile_entry_top(); ?>
-	<?php get_template_part( 'template-parts/post-meta' ); ?>
+	
 
 
-
+ <?php if ( 'post' == get_post_type() ) : ?>
+            <div class="post-meta">
+                <?php
+                responsive_mobile_post_meta_data();
+                
+                // Added filter to get by_line_comments option working.
+                $by_line_comments = apply_filters( 'responsive_mobile_by_line_comments', '1' );
+                
+                if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) && $by_line_comments ) : ?>
+                    <span class="comments-link">
+                        <span class="mdash">&mdash;</span>
+                        <?php comments_popup_link( __( 'No Comments &darr;', 'responsive-mobile' ), __( '1 Comment &darr;', 'responsive-mobile' ), __( '% Comments &darr;', 'responsive-mobile' ) ); ?>
+                    </span>
+                <?php endif; ?>
+            </div><!-- .post-meta -->
+        <?php endif; ?>
 	<div class="post-entry">
    
 		<?php the_content(); ?>

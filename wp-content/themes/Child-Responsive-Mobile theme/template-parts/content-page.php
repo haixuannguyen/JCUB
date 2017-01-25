@@ -19,24 +19,26 @@ if ( ! defined( 'WPINC' ) ) {
 }
 ?>
 <div class= container">
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php responsive_mobile_entry_top(); ?>
-	<div class="feature-image"> 
+
+
+    
+    <div class="feature-image"> 
 		<?php get_template_part( 'template-parts/post-meta-page' ); 
 	
 	// Added filter to get featured_image option working.
-	$featured_image = apply_filters( 'responsive_mobile_featured_image', '1' );
+	
 	if ( has_post_thumbnail() && $featured_image ) {
 		?>
 		
 		<?php
 	} ?>
-   <?php responsive_mobile_entry_before(); ?>
-<?php echo Su_Shortcodes::button(
+    </div>
+     <div class="button ">
+        <?php echo Su_Shortcodes::button(
 	// First argument is array with shortcode attributes
 	array(
 		'style' => 'flat',
-		'background' => '#0099ff',
+		'background' => '#2354a3',
 		'font-size' =>'16px',
 		'line-height' =>'56px',
 		'border-color' =>'#6cacf4',
@@ -44,16 +46,22 @@ if ( ! defined( 'WPINC' ) ) {
 		'-moz-border-radius' =>'5px',
 		'-webkit-border-radius' =>'5px',
 		
-		 'url'=>"http://www.jcub.edu.au/courses/how-to-apply/international-students.aspx" 
+		 'url'=>"http://localhost/jcub/how-to-apply/" 
 		
 	),
 	
 	/*Second argument is a shortcode content (between opening and closing tags)*/
 	'APPLY NOW'
 );  ?>
-	</div>
+    </div>
+	
+    
+   <?php responsive_mobile_entry_before(); ?>
+  
+ 
 
-	<div class="post-entry container">
+	<div class="post-entry">
+    
 		<?php the_content(); ?>
 		<?php wp_link_pages( array(
 				'before' => '<div class="page-links">' . __( 'Pages:', 'responsive-mobile' ),
